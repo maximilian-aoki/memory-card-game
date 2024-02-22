@@ -1,7 +1,9 @@
 import React from 'react';
 
 // utility functions
-// import getData from '../utilities/pokeApi';
+import { getPokemonArr } from '../utilities/pokeApi';
+
+console.log(await getPokemonArr());
 
 // styles
 import '../styles/component-styles/MainApp.css';
