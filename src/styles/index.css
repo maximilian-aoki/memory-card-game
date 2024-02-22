@@ -1,13 +1,24 @@
+/* font import */
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
 :root {
   box-sizing: border-box;
 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 20px;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  font-family: 'Pixelify Sans', sans-serif;
+
+  /* background */
+  background-image: url('https://wallpapers-clan.com/wp-content/uploads/2023/11/cute-pokemon-pikachu-rain-desktop-wallpaper-preview.jpg');
+  background-position: center;
+  background-size: cover;
+  background-color: rgb(44, 44, 52);
 }
 *,
 *::before,
@@ -20,4 +31,24 @@ body {
 /* for debugging */
 * {
   outline: 1px solid grey;
+}
+
+/* universal grid */
+.grid {
+  display: grid;
+}
+
+/* root React div */
+#root {
+  display: grid;
+  grid-template-rows: 10rem 10rem 10rem;
+}
+
+/* HEADER */
+
+/* MAIN */
+
+/* FOOTER */
+footer {
+  color: white;
 }

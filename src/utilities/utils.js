@@ -19,5 +19,18 @@ function _addId(idsObj, maxInt) {
   return idsObj.hasOwnProperty(randomId) ? _addId(idsObj, maxInt) : randomId;
 }
 
+function shuffleArr(arr) {
+  const arrCopy = [...arr];
+  const shuffledArr = [];
+
+  while (arrCopy.length > 0) {
+    const randomIndex = Math.floor(Math.random() * arrCopy.length);
+    const [randomSelection] = arrCopy.splice(randomIndex, 1);
+    shuffledArr.push(randomSelection);
+  }
+
+  return shuffledArr;
+}
+
 // exports
-export { generateIdArr };
+export { generateIdArr, shuffleArr };

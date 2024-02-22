@@ -1,17 +1,12 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 // utility functions
 import { getPokemonArr } from '../utilities/pokeApi';
-
-console.log(await getPokemonArr());
+import { shuffleArr } from '../utilities/utils';
 
 // styles
 import '../styles/component-styles/MainApp.css';
 
 export default function MainApp() {
-  return (
-    <div className="main-app-container grid">
-      <h1>Hello World!</h1>
-    </div>
-  );
+  return <h1>Hello Content!</h1>;
 }

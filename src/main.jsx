@@ -8,6 +8,12 @@ import './styles/index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <MainApp />
+    <header className="grid"></header>
+    <main className="grid">
+      <MainApp />
+    </main>
+    <footer className="grid">
+      <p>2024 Copyright Maximilian Aoki</p>
+    </footer>
   </React.StrictMode>,
 );
