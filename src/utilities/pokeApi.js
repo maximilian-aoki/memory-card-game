@@ -13,6 +13,7 @@ async function _getPokemonObj(intId) {
     const data = await response.json();
 
     return {
+      id: intId,
       name: data.name,
       imageUrl: data.sprites.front_default,
     };

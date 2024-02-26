@@ -1,0 +1,98 @@
+.main-container {
+  grid-template-rows: 8rem 1fr;
+}
+
+/* TOOLS */
+.tool-container {
+  justify-self: center;
+  max-width: 90%;
+  gap: 1rem;
+  grid-auto-flow: column;
+  grid-template-columns: 20rem 12rem 12rem;
+  color: rgb(23, 23, 23);
+}
+.tool-container > div {
+  background-color: rgb(192, 187, 169);
+  opacity: 0.9;
+  border-radius: 1.5rem 0.2rem;
+  padding: 0.6rem;
+  border: 0.3rem solid rgb(36, 50, 36);
+  grid-template-rows: 1.3rem 1fr;
+}
+.tool-container h3 {
+  font-weight: bold;
+}
+
+/* message board */
+.message {
+  font-size: 0.9rem;
+  align-content: start;
+}
+
+/* settings board */
+.settings-buttons {
+  gap: 0.4rem;
+}
+.settings-buttons button {
+  font-family: 'Pixelify Sans', sans-serif;
+  font-weight: bold;
+  border-radius: 0.4rem;
+  border: none;
+}
+.difficulty-buttons {
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.2rem;
+}
+.difficulty-buttons button.active {
+  background-color: rgb(228, 214, 114);
+  color: black;
+}
+.difficulty-buttons button.inactive {
+  cursor: pointer;
+  transition: background-color 0.3s linear;
+}
+.difficulty-buttons button.inactive:hover {
+  background-color: rgb(241, 236, 194);
+}
+.deal-button {
+  font-size: 0.8rem;
+  background-color: rgb(36, 50, 36);
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s linear;
+}
+.deal-button:hover {
+  background-color: rgb(55, 75, 55);
+}
+
+/* score board */
+.score-tallies {
+  align-content: center;
+  gap: 1rem;
+}
+
+/* DECK */
+.game-container {
+  place-content: center;
+  width: 80%;
+  margin: 2rem 0;
+  justify-self: center;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, 150px);
+}
+.pokemon-card {
+  place-items: center;
+  color: white;
+  border-radius: 0.5rem;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 31, 41, 1) 19%,
+    rgba(189, 183, 140, 1) 100%
+  );
+  height: 10rem;
+  transition: transform 0.2s ease-in-out;
+}
+.pokemon-card:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}

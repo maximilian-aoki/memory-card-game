@@ -8,7 +8,9 @@ import './styles/index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <header className="grid"></header>
+    <header className="grid">
+      <h1>Catch 'Em All!</h1>
+    </header>
     <main className="grid">
       <MainApp />
     </main>

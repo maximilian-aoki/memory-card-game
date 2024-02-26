@@ -30,7 +30,7 @@ body {
 }
 /* for debugging */
 * {
-  outline: 1px solid grey;
+  /* outline: 1px solid grey; */
 }
 
 /* universal grid */
@@ -40,15 +40,31 @@ body {
 
 /* root React div */
 #root {
+  min-height: 100vh;
   display: grid;
-  grid-template-rows: 10rem 10rem 10rem;
+  grid-template-rows: auto 1fr 8rem;
 }
 
 /* HEADER */
-
+header {
+  place-content: center;
+  text-align: center;
+  margin: 1rem 3rem;
+  color: white;
+  font-size: 4rem;
+  font-weight: bold;
+}
 /* MAIN */
 
 /* FOOTER */
 footer {
+  place-content: center;
   color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 16%,
+    rgba(0, 212, 255, 0) 100%
+  );
 }
