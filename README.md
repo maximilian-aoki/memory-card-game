@@ -1,8 +1,13 @@
-# React + Vite
+# Catch 'Em All!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A memory-card-game built with React, powered by PokeAPI.
 
-Currently, two official plugins are available:
+[Link to Live Page] (https://memory-card-game-ayt.pages.dev/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+- a random draw of popular Pokemon is generated every game from PokeAPI
+- on every correct guess, the list is shuffled
+- choose from 3 difficulty levels (8, 12 and 16 card decks respectively)
+- a dynamic message board guides the user through the game
+- localStorage used to remember a user's most recent difficulty level and high score
